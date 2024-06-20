@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Home from "./home.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Robokids">
+  <main class="min-h-screen flex flex-col items-center justify-center">
+    <Header />
+
+    <div class="flex-grow flex flex-col items-center justify-center">
+      <Home />
+    </div>
+
+    <Footer />
+  </main>
+</Layout>

@@ -1,0 +1,40 @@
+---
+import { ModeToggle } from "@/components/mode-toggle";
+---
+
+<header
+  class="relative left-0 top-0 flex flex-col md:flex-row items-center justify-between w-full py-3 px-4 bg-primary-foreground shadow"
+  id="header"
+>
+  <div class="flex flex-col md:flex-row md:items-center">
+    <a href="/" class="flex items-center mb-4 md:mb-0">
+      <img src="CuboRK.svg" alt="LOGO" class="flex justify-start h-14 w-18" />
+      <p class="ps-3 text-2xl">Robokids</p>
+    </a>
+  </div>
+
+  <ul class="md:flex gap-x-10 ml-auto hidden">
+    <li>
+      <a href="/aboutUs" class="navbar">Acerca de nosotros</a>
+    </li>
+    <li>
+      <a href="#" class="navbar">Eventos</a>
+    </li>
+    <li>
+      <a href="#" class="navbar">Blogs</a>
+    </li>
+    <li>
+      <a href="#" class="navbar">¡Contactanos!</a>
+    </li>
+  </ul>
+
+  <div class="ps-8">
+    <ModeToggle client:load />
+  </div>
+</header>
+
+<style>
+  .navbar {
+    @apply transition hover:text-green-800 dark:hover:text-green-300 text-xl;
+  }
+</style>
